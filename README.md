@@ -1,6 +1,7 @@
 # Vue 3 + TypeScript + Vite
 ### 效果
-()[]
+
+![Alt](https://github.com/OceanJuly/picture-magnifying-glass/blob/master/public/picture-magnifying-glass.gif)
 
 ### 实现
 #### 根据小图上的鼠标位置去定位大图
