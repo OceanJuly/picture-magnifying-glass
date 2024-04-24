@@ -58,5 +58,22 @@ if (maskX + getMaskWidth.value >= width) {
 
 而要使放大镜更加逼真，需要给放大效果的`img`标签外层再加一层`div`，然后通过`overflow: hidden;`来隐藏溢出的`img`，通过绝对定位来移动图片
 
-### 后面有空再补上通过HTML2Canvas实现放大效果
-`coding...`
+### HTML2Canvas实现放大效果
+
+> 放大镜
+
+![Alt](https://github.com/OceanJuly/picture-magnifying-glass/blob/master/public/preview1.png)
+最外层是放大镜，中间拖拽区，里面截取区。
+
+> 放大镜开关
+
+通过`zIndex`来控制层级，保证页面内容 => 放大镜 => 放大镜开关 的底层 => 顶层的层级。
+
+> 放大镜支持调整尺寸（四个方向，即上、右、下、左）
+
+可基于 `mousedown` `mousemove` `mouseup` 事件，计算尺寸和坐标实现。
+
+> 放大镜内容
+
+- 一种是通过背景图（background-image）的形式，然后通过background-position的来定位，但是代码量比较多，而且会有点卡顿和模糊
+- 另一种是拿到截取区，`html2canvas` 存储屏幕快照作为源数据，在拖拽、移动、大小变化时候调用显示就行。
