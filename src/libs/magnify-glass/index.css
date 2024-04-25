@@ -29,7 +29,7 @@
     width: 100px;
     height: 100px;
     box-sizing: border-box;
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
     /** 由于裁剪区域在拖拽区域之上，为了不影响拖拽事件，需设置此属性用于事件穿透 */
     pointer-events: none;
 
@@ -41,7 +41,7 @@
 /* 放大镜 & 缩放区域 */
 .magnifier__magnifier {
     box-sizing: border-box;
-    border: 2px dashed #7b68ee;
+    /*border: 2px dashed #7b68ee;*/
     /* 拖拽区域在此元素内部，这里是让拖拽元素在内部居中 */
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@
 /* 拖拽元素 */
 .magnifier__dragBox {
     box-sizing: border-box;
-    border: 1px dashed green;
+    /*border: 1px dashed green;*/
     cursor: move;
 }
 

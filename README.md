@@ -60,6 +60,9 @@ if (maskX + getMaskWidth.value >= width) {
 
 ### HTML2Canvas实现放大效果
 
+#### 效果
+![Alt](https://github.com/OceanJuly/picture-magnifying-glass/blob/master/public/video_preview.png)
+
 > 放大镜
 
 ![Alt](https://github.com/OceanJuly/picture-magnifying-glass/blob/master/public/preview1.png)
